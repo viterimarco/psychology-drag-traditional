@@ -1,0 +1,186 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #eee8f2;
+    color: #2f1b38;
+    margin: 0;
+    padding: 25px;
+}
+
+h1 {
+    color: #5b2c6f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body > p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+/* MAIN ACTIVITY CONTAINER */
+
+#dhtmlgoodies_dragDropContainer {
+    width: 930px;
+    min-height: 850px;
+    margin: 0 auto;
+    border: 2px solid #6a3d78;
+    background-color: #ffffff;
+    padding: 10px;
+    -moz-user-select: none;
+}
+
+#dhtmlgoodies_dragDropContainer ul {
+    margin: 0;
+    padding: 4px;
+}
+
+
+/* DRAGGABLE ITEMS */
+
+#dhtmlgoodies_dragDropContainer li,
+#dragContent li,
+li#indicateDestination {
+    list-style-type: none;
+    height: 46px;
+    box-sizing: border-box;
+    background-color: #f3e8f7;
+    border: 1px solid #6a3d78;
+    padding: 6px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+li#indicateDestination {
+    border: 1px dotted #6a3d78;
+    background-color: #ffffff;
+}
+
+
+/* CORRECT / INCORRECT */
+
+#dhtmlgoodies_dragDropContainer ul li.correctAnswer {
+    background-color: green;
+    color: white;
+}
+
+#dhtmlgoodies_dragDropContainer ul li.wrongAnswer {
+    background-color: red;
+    color: white;
+}
+
+
+/* LEFT COLUMN */
+
+div#dhtmlgoodies_listOfItems {
+    float: left;
+    width: 285px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#dhtmlgoodies_listOfItems ul {
+    height: 690px;
+}
+
+div#dhtmlgoodies_listOfItems div {
+    border: 2px solid #6a3d78;
+}
+
+div#dhtmlgoodies_listOfItems div ul {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#dhtmlgoodies_listOfItems div p {
+    margin: 0;
+    padding: 9px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #6a3d78;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* HOVER EFFECT */
+
+#dhtmlgoodies_dragDropContainer .mouseover {
+    background-color: #eee8f2;
+    border: 2px solid #8e6699;
+}
+
+
+/* RIGHT COLUMN */
+
+div#dhtmlgoodies_mainContainer {
+    width: 610px;
+    float: left;
+}
+
+#dhtmlgoodies_mainContainer div {
+    float: left;
+    width: 280px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #6a3d78;
+    background-color: #faf7fb;
+}
+
+#dhtmlgoodies_mainContainer div ul {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#dhtmlgoodies_mainContainer div p {
+    margin: 0;
+    padding: 9px;
+    font-weight: bold;
+    background-color: #6a3d78;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+#dhtmlgoodies_mainContainer ul {
+    width: 255px;
+    border: 0;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+
+/* ITEM WHILE BEING DRAGGED */
+
+#dragContent {
+    position: absolute;
+    width: 265px;
+    height: auto;
+    display: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2000;
+}
+
+
+/* SMALL DROP ARROW */
+
+#dragDropIndicator {
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    display: none;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* OLD TEMPLATE CLASS */
+
+.style1 {
+    color: #6a3d78;
+}
